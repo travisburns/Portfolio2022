@@ -1,0 +1,166 @@
+/* Background styles */
+body {
+    background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+z-index: 1;
+}
+
+/* Glassmorphism card effect */
+.main {
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    
+    margin: 50px;
+    z-index: 2;
+    
+}
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    color: gray;
+    font-size: 30px;
+    margin: 0;
+}
+
+.intro-text h4 {
+    font-family: 'Bitter', serif;
+    width: 50%;
+    font-size: 30px;
+
+}
+
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav li {
+    margin: 30px;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+}
+
+.header {
+    padding-left: 50px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+
+.intro-picture img {
+    width: 300px;
+    height: 300px;
+}
+
+
+.glass-button {
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+ 
+  .glass-button:hover {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-text p {
+    width: 60%;
+    font-family: 'Source Sans Pro';
+  }
+
+  .about-pic img {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.skills-header{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.sphere {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: black;
+    
+}
+
+.contact-me {
+    text-align: center;
+    width: 25%;
+    font-size: larger;
+}
+
+.contact-me-topics {
+    display: flex;
+}
+
+.particle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:400px;}
+    100% {background-color:red; left:0px; top:600px;}
+  }
+
+  .ani {
+    z-index: 0;
+  }
